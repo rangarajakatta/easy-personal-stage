@@ -46,12 +46,21 @@ const Navigation = () => {
             </li>
           ))}
         </ul>
-        <a
-          href="#contact"
-          className="hidden md:inline-flex px-5 py-2.5 text-sm font-medium bg-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity"
-        >
-          Get in Touch
-        </a>
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="#contact"
+            className="inline-flex px-5 py-2.5 text-sm font-medium bg-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity"
+          >
+            Get in Touch
+          </a>
+          <a
+            href="/__logout"
+            className="inline-flex px-4 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            title="Log out"
+          >
+            Log out
+          </a>
+        </div>
       </div>
     </nav>
   );
